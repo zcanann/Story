@@ -1,0 +1,1217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Menus\TitleScreen\HorizontalSelect.png</Source>
+      <Name>Menus\TitleScreen\HorizontalSelect</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\TitleScreen\HorizontalSelect.xnb</Output>
+      <Time>2015-03-17T00:04:54-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\TitleScreen\VerticalSelect.png</Source>
+      <Name>Menus\TitleScreen\VerticalSelect</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\TitleScreen\VerticalSelect.xnb</Output>
+      <Time>2015-03-17T00:04:54-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\SolidBlackSquare.png</Source>
+      <Name>Menus\SolidBlackSquare</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\SolidBlackSquare.xnb</Output>
+      <Time>2015-03-17T00:06:20-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\BLGrass.png</Source>
+      <Name>Tiles\Grass\BLGrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\BLGrass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BLRuins.png</Source>
+      <Name>Tiles\BLRuins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\BLRuins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\BLDesert.png</Source>
+      <Name>Tiles\Desert\BLDesert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\BLDesert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\BLSnow.png</Source>
+      <Name>Tiles\Snow\BLSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\BLSnow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\BMGrass.png</Source>
+      <Name>Tiles\Grass\BMGrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\BMGrass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BMRuins.png</Source>
+      <Name>Tiles\BMRuins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\BMRuins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\BMDesert.png</Source>
+      <Name>Tiles\Desert\BMDesert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\BMDesert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\BMSnow.png</Source>
+      <Name>Tiles\Snow\BMSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\BMSnow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\BRGrass.png</Source>
+      <Name>Tiles\Grass\BRGrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\BRGrass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BridgeL.png</Source>
+      <Name>Tiles\BridgeL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\BridgeL.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BridgeM.png</Source>
+      <Name>Tiles\BridgeM</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\BridgeM.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BridgeR.png</Source>
+      <Name>Tiles\BridgeR</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\BridgeR.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\BRRuins.png</Source>
+      <Name>Tiles\BRRuins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\BRRuins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\BRDesert.png</Source>
+      <Name>Tiles\Desert\BRDesert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\BRDesert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\BRSnow.png</Source>
+      <Name>Tiles\Snow\BRSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\BRSnow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\LavaM.png</Source>
+      <Name>Tiles\LavaM</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\LavaM.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\LavaT.png</Source>
+      <Name>Tiles\LavaT</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\LavaT.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\MLGrass.png</Source>
+      <Name>Tiles\Grass\MLGrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\MLGrass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\MLRuins.png</Source>
+      <Name>Tiles\MLRuins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\MLRuins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\MLDesert.png</Source>
+      <Name>Tiles\Desert\MLDesert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\MLDesert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\MLSnow.png</Source>
+      <Name>Tiles\Snow\MLSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\MLSnow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\MMGrass.png</Source>
+      <Name>Tiles\Grass\MMGrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\MMGrass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\MMRuins.png</Source>
+      <Name>Tiles\MMRuins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\MMRuins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\MMDesert.png</Source>
+      <Name>Tiles\Desert\MMDesert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\MMDesert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\MMSnow.png</Source>
+      <Name>Tiles\Snow\MMSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\MMSnow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\MRGrass.png</Source>
+      <Name>Tiles\Grass\MRGrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\MRGrass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\MRRuins.png</Source>
+      <Name>Tiles\MRRuins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\MRRuins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\MRDesert.png</Source>
+      <Name>Tiles\Desert\MRDesert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\MRDesert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\MRSnow.png</Source>
+      <Name>Tiles\Snow\MRSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\MRSnow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\RL1Grass.png</Source>
+      <Name>Tiles\Grass\RL1Grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\RL1Grass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\RL1Ruins.png</Source>
+      <Name>Tiles\RL1Ruins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\RL1Ruins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\RL1Desert.png</Source>
+      <Name>Tiles\Desert\RL1Desert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\RL1Desert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\RL1Snow.png</Source>
+      <Name>Tiles\Snow\RL1Snow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\RL1Snow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\RL2Grass.png</Source>
+      <Name>Tiles\Grass\RL2Grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\RL2Grass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\RL2Ruins.png</Source>
+      <Name>Tiles\RL2Ruins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\RL2Ruins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\RL2Desert.png</Source>
+      <Name>Tiles\Desert\RL2Desert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\RL2Desert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\RL2Snow.png</Source>
+      <Name>Tiles\Snow\RL2Snow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\RL2Snow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\RL3Grass.png</Source>
+      <Name>Tiles\Grass\RL3Grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\RL3Grass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\RL3Ruins.png</Source>
+      <Name>Tiles\RL3Ruins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\RL3Ruins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\RL3Desert.png</Source>
+      <Name>Tiles\Desert\RL3Desert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\RL3Desert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\RL3Snow.png</Source>
+      <Name>Tiles\Snow\RL3Snow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\RL3Snow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\RR1Grass.png</Source>
+      <Name>Tiles\Grass\RR1Grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\RR1Grass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\RR1Ruins.png</Source>
+      <Name>Tiles\RR1Ruins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\RR1Ruins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\RR1Desert.png</Source>
+      <Name>Tiles\Desert\RR1Desert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\RR1Desert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\RR1Snow.png</Source>
+      <Name>Tiles\Snow\RR1Snow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\RR1Snow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\RR2Grass.png</Source>
+      <Name>Tiles\Grass\RR2Grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\RR2Grass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\RR2Ruins.png</Source>
+      <Name>Tiles\RR2Ruins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\RR2Ruins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\RR2Desert.png</Source>
+      <Name>Tiles\Desert\RR2Desert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\RR2Desert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\RR2Snow.png</Source>
+      <Name>Tiles\Snow\RR2Snow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\RR2Snow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\RR3Grass.png</Source>
+      <Name>Tiles\Grass\RR3Grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\RR3Grass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\RR3Ruins.png</Source>
+      <Name>Tiles\RR3Ruins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\RR3Ruins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\RR3Desert.png</Source>
+      <Name>Tiles\Desert\RR3Desert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\RR3Desert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\RR3Snow.png</Source>
+      <Name>Tiles\Snow\RR3Snow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\RR3Snow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\TLGrass.png</Source>
+      <Name>Tiles\Grass\TLGrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\TLGrass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\TLRuins.png</Source>
+      <Name>Tiles\TLRuins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\TLRuins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\TLDesert.png</Source>
+      <Name>Tiles\Desert\TLDesert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\TLDesert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\TLSnow.png</Source>
+      <Name>Tiles\Snow\TLSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\TLSnow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\TMGrass.png</Source>
+      <Name>Tiles\Grass\TMGrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\TMGrass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\TMRuins.png</Source>
+      <Name>Tiles\TMRuins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\TMRuins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\TMDesert.png</Source>
+      <Name>Tiles\Desert\TMDesert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\TMDesert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\TMSnow.png</Source>
+      <Name>Tiles\Snow\TMSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\TMSnow.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Grass\TRGrass.png</Source>
+      <Name>Tiles\Grass\TRGrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Grass\TRGrass.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\TRRuins.png</Source>
+      <Name>Tiles\TRRuins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\TRRuins.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Desert\TRDesert.png</Source>
+      <Name>Tiles\Desert\TRDesert</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Desert\TRDesert.xnb</Output>
+      <Time>2015-03-17T10:44:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Snow\TRSnow.png</Source>
+      <Name>Tiles\Snow\TRSnow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Snow\TRSnow.xnb</Output>
+      <Time>2015-03-17T10:44:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\WaterM.png</Source>
+      <Name>Tiles\WaterM</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\WaterM.xnb</Output>
+      <Time>2015-03-17T10:44:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\WaterT.png</Source>
+      <Name>Tiles\WaterT</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\WaterT.xnb</Output>
+      <Time>2015-03-17T10:44:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Tiles\Invisible.png</Source>
+      <Name>Tiles\Invisible</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Tiles\Invisible.xnb</Output>
+      <Time>2015-03-17T10:48:00-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Debug\VertexNode.png</Source>
+      <Name>Debug\VertexNode</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Debug\VertexNode.xnb</Output>
+      <Time>2015-03-23T14:43:30-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\Bridge.png</Source>
+      <Name>Objects\Bridge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\Bridge.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\CloudLarge.png</Source>
+      <Name>Objects\CloudLarge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\CloudLarge.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\CloudSmall.png</Source>
+      <Name>Objects\CloudSmall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\CloudSmall.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\Lava.png</Source>
+      <Name>Objects\Lava</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\Lava.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\OceanMine.png</Source>
+      <Name>Objects\OceanMine</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\OceanMine.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\OceanMineLarge.png</Source>
+      <Name>Objects\OceanMineLarge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\OceanMineLarge.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\PillarLargeRuins.png</Source>
+      <Name>Objects\PillarLargeRuins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\PillarLargeRuins.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\PillarSmallRuins.png</Source>
+      <Name>Objects\PillarSmallRuins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\PillarSmallRuins.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\PlatformBridge.png</Source>
+      <Name>Objects\PlatformBridge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\PlatformBridge.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\PlatformRuins.png</Source>
+      <Name>Objects\PlatformRuins</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\PlatformRuins.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\SignGlideLeft.png</Source>
+      <Name>Objects\SignGlideLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\SignGlideLeft.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\SignGlideRight.png</Source>
+      <Name>Objects\SignGlideRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\SignGlideRight.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\SignSkullLeft.png</Source>
+      <Name>Objects\SignSkullLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\SignSkullLeft.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\SignSkullRight.png</Source>
+      <Name>Objects\SignSkullRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\SignSkullRight.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\SpikeBall.png</Source>
+      <Name>Objects\SpikeBall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\SpikeBall.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\SpikesB.png</Source>
+      <Name>Objects\SpikesB</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\SpikesB.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\SpikesSmallB.png</Source>
+      <Name>Objects\SpikesSmallB</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\SpikesSmallB.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\SpikesSmallT.png</Source>
+      <Name>Objects\SpikesSmallT</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\SpikesSmallT.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\SpikesT.png</Source>
+      <Name>Objects\SpikesT</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\SpikesT.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\Water.png</Source>
+      <Name>Objects\Water</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\Water.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\WaterTop.png</Source>
+      <Name>Objects\WaterTop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\WaterTop.xnb</Output>
+      <Time>2015-03-20T19:37:08-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\BreathParticle.png</Source>
+      <Name>Particles\BreathParticle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Particles\BreathParticle.xnb</Output>
+      <Time>2015-03-20T19:37:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\DeathParticle.png</Source>
+      <Name>Particles\DeathParticle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Particles\DeathParticle.xnb</Output>
+      <Time>2015-03-20T19:37:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\MindPowerParticle.png</Source>
+      <Name>Particles\MindPowerParticle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Particles\MindPowerParticle.xnb</Output>
+      <Time>2015-03-20T19:37:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\ProjectileParticle.png</Source>
+      <Name>Particles\ProjectileParticle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Particles\ProjectileParticle.xnb</Output>
+      <Time>2015-03-20T19:37:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\RainParticle.png</Source>
+      <Name>Particles\RainParticle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Particles\RainParticle.xnb</Output>
+      <Time>2015-03-20T19:37:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\SandParticle.png</Source>
+      <Name>Particles\SandParticle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Particles\SandParticle.xnb</Output>
+      <Time>2015-03-20T19:37:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\SnowflakeParticle.png</Source>
+      <Name>Particles\SnowflakeParticle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Particles\SnowflakeParticle.xnb</Output>
+      <Time>2015-03-20T19:37:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\WindParticle.png</Source>
+      <Name>Particles\WindParticle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Particles\WindParticle.xnb</Output>
+      <Time>2015-03-20T19:37:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Collectables\Egg.png</Source>
+      <Name>Sprites\Collectables\Egg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Collectables\Egg.xnb</Output>
+      <Time>2015-03-20T19:40:48-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Idle.png</Source>
+      <Name>Sprites\Player\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Player\Idle.xnb</Output>
+      <Time>2015-03-20T19:51:36-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Player_Attack.png</Source>
+      <Name>Sprites\Player\Player_Attack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Player\Player_Attack.xnb</Output>
+      <Time>2015-03-20T19:51:36-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Player_Attack2.png</Source>
+      <Name>Sprites\Player\Player_Attack2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Player\Player_Attack2.xnb</Output>
+      <Time>2015-03-20T19:51:36-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Player_Glide.png</Source>
+      <Name>Sprites\Player\Player_Glide</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Player\Player_Glide.xnb</Output>
+      <Time>2015-03-20T19:51:36-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Player\Player_Underwater.png</Source>
+      <Name>Sprites\Player\Player_Underwater</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Player\Player_Underwater.xnb</Output>
+      <Time>2015-03-20T19:51:36-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\TitleScreen\TitleScreen.png</Source>
+      <Name>Menus\TitleScreen\TitleScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\TitleScreen\TitleScreen.xnb</Output>
+      <Time>2015-03-22T21:15:28-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Editor\CrossHair.png</Source>
+      <Name>Editor\CrossHair</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Editor\CrossHair.xnb</Output>
+      <Time>2015-03-23T00:18:16-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Editor\LevelEditPanel.png</Source>
+      <Name>Editor\LevelEditPanel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Editor\LevelEditPanel.xnb</Output>
+      <Time>2015-03-24T00:30:48-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Editor\HorizontalSelector.png</Source>
+      <Name>Editor\HorizontalSelector</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Editor\HorizontalSelector.xnb</Output>
+      <Time>2015-03-24T00:59:44-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\Collectables\Apple.png</Source>
+      <Name>Objects\Collectables\Apple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\Collectables\Apple.xnb</Output>
+      <Time>2015-03-24T19:57:42-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Font\GameFont.spritefont</Source>
+      <Name>Font\GameFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Font\GameFont.xnb</Output>
+      <Time>2015-03-23T18:06:50-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\Collectables\Egg.png</Source>
+      <Name>Objects\Collectables\Egg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\Collectables\Egg.xnb</Output>
+      <Time>2015-03-24T20:23:16-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\CheckPoint\OuthouseClosed.png</Source>
+      <Name>Objects\CheckPoint\OuthouseClosed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\CheckPoint\OuthouseClosed.xnb</Output>
+      <Time>2015-03-24T21:26:10-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\CheckPoint\OutHouseOpen.png</Source>
+      <Name>Objects\CheckPoint\OutHouseOpen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\CheckPoint\OutHouseOpen.xnb</Output>
+      <Time>2015-03-24T21:26:10-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\Collectables\Banana.png</Source>
+      <Name>Objects\Collectables\Banana</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\Collectables\Banana.xnb</Output>
+      <Time>2015-03-24T22:01:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\Collectables\Orange.png</Source>
+      <Name>Objects\Collectables\Orange</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\Collectables\Orange.xnb</Output>
+      <Time>2015-03-24T22:01:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Editor\PterodactylEditor.png</Source>
+      <Name>Editor\PterodactylEditor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Editor\PterodactylEditor.xnb</Output>
+      <Time>2015-03-24T23:03:34-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Dunkleosteus\Dunkleosteus.png</Source>
+      <Name>Sprites\Dunkleosteus\Dunkleosteus</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Dunkleosteus\Dunkleosteus.xnb</Output>
+      <Time>2015-03-25T14:04:52-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Pterodactyl\Pterodactyl.png</Source>
+      <Name>Sprites\Pterodactyl\Pterodactyl</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Pterodactyl\Pterodactyl.xnb</Output>
+      <Time>2015-03-25T14:58:16-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Raptor\Attack.png</Source>
+      <Name>Sprites\Raptor\Attack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Raptor\Attack.xnb</Output>
+      <Time>2015-03-24T22:59:58-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Raptor\Idle.png</Source>
+      <Name>Sprites\Raptor\Idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Raptor\Idle.xnb</Output>
+      <Time>2015-03-24T22:59:58-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Raptor\Jump.png</Source>
+      <Name>Sprites\Raptor\Jump</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Raptor\Jump.xnb</Output>
+      <Time>2015-03-24T22:59:58-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Raptor\Run.png</Source>
+      <Name>Sprites\Raptor\Run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Raptor\Run.xnb</Output>
+      <Time>2015-03-24T22:59:58-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Editor\RaptorEditor.png</Source>
+      <Name>Editor\RaptorEditor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Editor\RaptorEditor.xnb</Output>
+      <Time>2015-03-24T23:00:12-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Editor\DunkleosteusEditor.png</Source>
+      <Name>Editor\DunkleosteusEditor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Editor\DunkleosteusEditor.xnb</Output>
+      <Time>2015-03-25T14:00:00-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Pterodactyl\PterodactylIdle.png</Source>
+      <Name>Sprites\Pterodactyl\PterodactylIdle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\Pterodactyl\PterodactylIdle.xnb</Output>
+      <Time>2015-03-25T14:59:46-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Objects\Exit\Exit.png</Source>
+      <Name>Objects\Exit\Exit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Objects\Exit\Exit.xnb</Output>
+      <Time>2015-03-26T18:14:00-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\EggProjectile.png</Source>
+      <Name>Sprites\EggProjectile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\EggProjectile.xnb</Output>
+      <Time>2015-03-26T20:49:06-07:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{DFB73EBA-C456-438D-A910-58B2876C1193}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\StoryContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T17:22:30-07:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-11-26T21:08:20.3821275-08:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
