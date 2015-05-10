@@ -17,15 +17,15 @@ namespace Story
             Vector2 MaxVelocity,
             Vector2 MinOffset,
             Vector2 MaxOffset,
-            int MaxParticles = 8500,
-            int ParticleRate = 2,
+            int MaxParticles = 6000,
+            int ParticleRate = 40,
             int ParticleSize = 32,
-            float RotationSpeed = 0.0025f,
-            float OpacitySpeed = 0.75f,
-            float ScaleSpeed = 0.006f,
-            float ScaleMax = 0.2f,
+            float RotationSpeed = 0.0f,
+            float OpacitySpeed = 0.0f,
+            float ScaleSpeed = 0.004f,
+            float ScaleMax = 0.25f,
             bool KillOnMaxScale = false,
-            float LiveTime = 300f)
+            float LiveTime = 0.0f)
 
             : base(StartPosition, ParticleColor, MinPosition, MaxPosition, MinVelocity, MaxVelocity, MinOffset, MaxOffset, MaxParticles, ParticleRate,
             ParticleSize, RotationSpeed, OpacitySpeed, ScaleSpeed, ScaleMax, KillOnMaxScale, LiveTime)

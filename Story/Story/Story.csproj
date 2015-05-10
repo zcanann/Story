@@ -90,13 +90,19 @@
   <ItemGroup>
     <Compile Include="Animation\Animation.cs" />
     <Compile Include="Animation\AnimationPlayer.cs" />
+    <Compile Include="GUI_Menus\CreditsMenu.cs" />
+    <Compile Include="GUI\GUI.cs" />
+    <Compile Include="GUI_Menus\IngameMenu.cs" />
+    <Compile Include="GUI_Menus\OptionsMenu.cs" />
+    <Compile Include="GUI_Menus\LevelSelectMenu.cs" />
+    <Compile Include="GUI_Menus\IntroMenu.cs" />
     <Compile Include="Particles\BreathEmitter.cs" />
-    <Compile Include="Camera.cs" />
+    <Compile Include="Static\Camera.cs" />
     <Compile Include="Particles\CloudEmitter.cs" />
     <Compile Include="Particles\MindPowerEmitter.cs" />
     <Compile Include="Particles\DeathEmitter.cs" />
     <Compile Include="Particles\HitEmitter.cs" />
-    <Compile Include="LevelExit.cs" />
+    <Compile Include="Objects\LevelExit.cs" />
     <Compile Include="Objects\CheckPoint.cs" />
     <Compile Include="Entities\Enemy.cs" />
     <Compile Include="Objects\CollectableFruit.cs" />
@@ -108,7 +114,7 @@
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="GUI_Menus\Menu.cs" />
     <Compile Include="GUI_Menus\MenuManager.cs" />
-    <Compile Include="InputManager.cs" />
+    <Compile Include="Static\InputManager.cs" />
     <Compile Include="Level\LevelEditor.cs" />
     <Compile Include="Level\Level.cs" />
     <Compile Include="Collision\LinePrimitive.cs" />
@@ -123,7 +129,7 @@
     <Compile Include="GUI_Menus\TitleScreen.cs" />
     <Compile Include="Particles\RainEmitter.cs" />
     <Compile Include="Particles\SandEmitter.cs" />
-    <Compile Include="SaveGame.cs" />
+    <Compile Include="Static\SaveGame.cs" />
     <Compile Include="Particles\SnowEmitter.cs" />
     <Compile Include="Tiles\Tile.cs" />
     <Compile Include="Tiles\TileMap.cs" />
@@ -166,6 +172,7 @@
   <ItemGroup>
     <None Include="Story_TemporaryKey.pfx" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <!--

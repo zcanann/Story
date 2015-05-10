@@ -81,12 +81,12 @@ namespace Story
 
         }
 
-        public void Update(GameTime gameTime)
+        public void Update(GameTime GameTime)
         {
             // CREATE NEW PARTICLES
             if (CreateEffect == true)
             {
-                CurrentTime += gameTime.ElapsedGameTime.Milliseconds;
+                CurrentTime += GameTime.ElapsedGameTime.Milliseconds;
 
                 if (CurrentTime > LiveTime && LiveTime != 0.0f)
                     EndEffect();
@@ -98,6 +98,7 @@ namespace Story
                     Particles[Next].Color = ParticleColor;
                     Particles[Next].Scale = 0.0f;
                     Particles[Next].Alive = true;
+
                     // Set position/velocity
                     Particles[Next].Position = StartPosition;
                     Particles[Next].Position.X += RandomInt((int)MinOffset.X, (int)MaxOffset.X);
@@ -123,7 +124,7 @@ namespace Story
                 if (Particles[Index].Alive)
                 {
                     // Fade
-                    Particles[Index].Opacity -= OpacitySpeed * gameTime.ElapsedGameTime.Milliseconds * EndMultiplier;
+                    Particles[Index].Opacity -= OpacitySpeed * GameTime.ElapsedGameTime.Milliseconds * EndMultiplier;
                     if (Particles[Index].Opacity < 0f)
                     {
                         // Kill particle
@@ -132,10 +133,10 @@ namespace Story
                     }
 
                     // Rotate
-                    Particles[Index].Rotation += RotationSpeed * gameTime.ElapsedGameTime.Milliseconds;
+                    Particles[Index].Rotation += RotationSpeed * GameTime.ElapsedGameTime.Milliseconds;
 
                     if (Particles[Index].Scale < ScaleMax)
-                        Particles[Index].Scale += ScaleSpeed * gameTime.ElapsedGameTime.Milliseconds;
+                        Particles[Index].Scale += ScaleSpeed * GameTime.ElapsedGameTime.Milliseconds;
                     else if (KillOnMaxScale)
                         Particles[Index].Alive = false;
 
@@ -169,9 +170,9 @@ namespace Story
             CreateEffect = false;
         }
 
-        public int RandomInt(int min, int max)
+        public int RandomInt(int Min, int Max)
         {
-            return Random.Next(min, max + 1);
+            return Random.Next(Min, Max + 1);
         }
 
         public double RandomDouble(double start, double end)
@@ -179,7 +180,7 @@ namespace Story
             return (Random.NextDouble() * Math.Abs(end - start)) + start;
         }
 
-        public void Draw(GameTime GameTime, SpriteBatch SpriteBatch)
+        public void Draw(GameTime GameTime, SpriteBatch SpriteBatch, bool UpdateByCameraOffset = true)
         {
             Rectangle DrawRectangle = new Rectangle();
 
@@ -191,16 +192,30 @@ namespace Story
             {
                 if (Particles[P].Alive == true)
                 {
-                    DrawRectangle.X = (int)Particles[P].Position.X - (int)Camera.CameraPosition.X;
-                    DrawRectangle.Y = (int)Particles[P].Position.Y - (int)Camera.CameraPosition.Y;
+                    if (UpdateByCameraOffset)
+                    {
+                        DrawRectangle.X = (int)Particles[P].Position.X - (int)Camera.CameraPosition.X;
+                        DrawRectangle.Y = (int)Particles[P].Position.Y - (int)Camera.CameraPosition.Y;
+                    }
+                    else
+                    {
+                        DrawRectangle.X = (int)Particles[P].Position.X;
+                        DrawRectangle.Y = (int)Particles[P].Position.Y;
+                    }
                     DrawRectangle.Width = (int)(Particles[P].Width * Particles[P].Scale);
                     DrawRectangle.Height = (int)(Particles[P].Height * Particles[P].Scale);
 
-                    if (DrawRectangle.X >= MinPosition.X && DrawRectangle.Y >= MinPosition.Y
-                        && DrawRectangle.X + DrawRectangle.Width <= MaxPosition.X && DrawRectangle.Y + DrawRectangle.Height <= MaxPosition.Y)
+                    if (DrawRectangle.X >= MinPosition.X &&
+                        DrawRectangle.X + DrawRectangle.Width <= MaxPosition.X &&
+                        DrawRectangle.Y >= MinPosition.Y &&
+                        DrawRectangle.Y + DrawRectangle.Height <= MaxPosition.Y)
+                    {
                         Particles[P].Draw(SpriteBatch, DrawRectangle);
+                    }
                     else
+                    {
                         Particles[P].Alive = false;
+                    }
                 }
             }
 

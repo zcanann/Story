@@ -118,6 +118,10 @@ namespace Story
         public static Keys[] MenuKeys = { Keys.Escape, Keys.Enter };
         public static Buttons[] MenuButtons = { Buttons.Start };
 
+        // Debug
+        public static Keys[] DebugKeys = { Keys.OemTilde };
+        public static Buttons[] DebugButtons = { Buttons.RightStick };
+
         // Bumpers
         public static Keys[] LeftBumperKeys = { Keys.Z };
         public static Buttons[] LeftBumperButtons = { Buttons.LeftShoulder };
@@ -177,6 +181,14 @@ namespace Story
             {
                 InputLookupTable[Next.Key] = PreparedInputLookupTable[Next.Key];
             }
+        }
+
+        // Cycle the input early to avoid multiple JustPressed() or JustReleased() processing
+        // This is useful when exiting a menu if the exit button also does something in the game,
+        // that way both do not get executed
+        public static void JamInput()
+        {
+            EndUpdate();
         }
 
         public static void ClearPrimaryDirectionalDelay(InputDirectionEnum InputDirection)

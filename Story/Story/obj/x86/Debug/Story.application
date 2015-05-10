@@ -8,14 +8,14 @@
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Story.exe.manifest" size="59503">
+    <dependentAssembly dependencyType="install" codebase="Story.exe.manifest" size="70871">
       <assemblyIdentity name="Story.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>5ha0Ds0gBH5b+hk3WgNzfkfoGSE=</dsig:DigestValue>
+        <dsig:DigestValue>X4c9W/oL4T0vlunXVfk9K3dD6B4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

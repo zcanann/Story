@@ -51,6 +51,9 @@ namespace Story
         protected bool JumpEngaged = false;
         protected bool IsOnGround = false;
 
+        protected bool IsGliding = false;
+        protected bool IsFatigued = false;
+
         // PHYSICS
         protected float Speed;
         protected Vector2 Movement; // Current analog movement
@@ -71,6 +74,9 @@ namespace Story
         private const float UnderwaterJumpLaunchVelocity = -3000.0f;
         private const float UnderwaterGravityAcceleration = 2000.0f;
         private const float UnderwaterMaxFallSpeed = 200.0f;
+
+        // GLIDE
+        private const float GlideMaxFallSpeed = 150.0f;
 
         // CURRENT STATE (Selected from underwater or standard)
         protected float ActualJumpLaunchVelocity;
@@ -121,14 +127,21 @@ namespace Story
             }
             if (Underwater)
             {
-                //Underwater physics
+                // Underwater physics
                 ActualGravityAcceleration = UnderwaterGravityAcceleration;
                 ActualMaxFallSpeed = UnderwaterMaxFallSpeed;
                 ActualJumpLaunchVelocity = UnderwaterJumpLaunchVelocity;
             }
+            else if (IsGliding)
+            {
+                // Gliding physics
+                ActualGravityAcceleration = GravityAcceleration;
+                ActualJumpLaunchVelocity = JumpLaunchVelocity;
+                ActualMaxFallSpeed = GlideMaxFallSpeed;
+            }
             else
             {
-                //Normal physics
+                // Normal physics
                 ActualGravityAcceleration = GravityAcceleration;
                 ActualJumpLaunchVelocity = JumpLaunchVelocity;
                 ActualMaxFallSpeed = MaxFallSpeed;
@@ -328,8 +341,9 @@ namespace Story
                 ShiftAmount.Y = 0f;
 
             if (LandedOnGround && ShiftAmount.Y != 0)
+            {
                 IsOnGround = true;
-
+            }
             return ShiftAmount;
         }
 

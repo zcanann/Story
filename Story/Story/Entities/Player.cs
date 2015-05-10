@@ -25,20 +25,24 @@ namespace Story
         private CollisionObjectRectangle HoverBufferCollisionBox;
 
         private BreathEmitter BreathEmitter;
+        private CloudEmitter CloudEmitter;
 
         private const float AttackTimerMax = 200.0f;
         private float AttackTimer = AttackTimerMax;
 
-        private const float MindPowerMax = 8000.0f;
-        private float MindPower = MindPowerMax;
+        // Public const/static to allow GUI to read these
+        public const float MindPowerMax = 8000.0f;
+        public static float MindPower = MindPowerMax;
+
+        public const int MaxPlayerHP = 10;
+        public static int DisplayHealth = MaxPlayerHP;
 
         private Vector2 LastCheckPointSpawn;
 
-        private bool Glide = false;
-        private bool GlideFatigued = false;
+
         private bool BreathingUW = false;
 
-        private int EggCount = 0;
+        public static int EggCount = 0;
 
         private const float BounceHeight = 0.18f;
         private const float BounceRate = 3.0f;
@@ -65,13 +69,18 @@ namespace Story
             HoverCollisionBox = new CollisionObjectRectangle(Position, new Vector2(HoverWidth, HoverHeight - HoverBuffer), CollisionObjectTypeEnum.Hover);
             HoverBufferCollisionBox = new CollisionObjectRectangle(Position + Vector2.UnitY * (HoverHeight - HoverBuffer), new Vector2(HoverWidth, HoverBuffer), CollisionObjectTypeEnum.Hover);
 
-            BreathEmitter = new BreathEmitter(Vector2.Zero,
-                new Color(255, 255, 255, 255), Vector2.Zero, Game.ScreenSize, new Vector2(-0.2f, -1.8f), new Vector2(0.2f, 0.2f),
-                new Vector2(-4, -8), new Vector2(4, -8));
+            // Create breath emitter
+            BreathEmitter = new BreathEmitter(Vector2.Zero, new Color(255, 255, 255, 255), Vector2.Zero, Game.ScreenSize,
+                new Vector2(-0.2f, -1.8f), new Vector2(0.2f, 0.2f), new Vector2(-4, -8), new Vector2(4, -8));
+
+            // Create cloud emitter
+            CloudEmitter = new CloudEmitter(Vector2.Zero, new Color(255, 255, 255, 255), Vector2.Zero, Game.ScreenSize,
+                new Vector2(-1.0f, -1.0f), new Vector2(1.0f, 1.0f), new Vector2(-32, -8), new Vector2(32, 0));
+
 
             LastCheckPointSpawn = Position;
 
-            Health = MaxHealth = 10;
+            Health = MaxHealth = MaxPlayerHP;
         }
 
         new public static void LoadContent(ContentManager Content)
@@ -97,7 +106,7 @@ namespace Story
             DoHoverCollision(GameTime, WorldCollisionObjects);
             base.Update(GameTime, WorldCollisionObjects);
 
-
+            CloudEmitter.Update(GameTime);
             BreathEmitter.Update(GameTime);
 
             HoverCollisionBox.UpdatePosition(Position, (int)HoverWidth, (int)(HoverHeight - HoverBuffer));
@@ -106,27 +115,77 @@ namespace Story
             // Update breath effect
             if (Underwater)
             {
+                // Cancel gliding underwater
+                IsGliding = false;
+                IsFatigued = false;
+
+                // Drain mind power
                 MindPower -= GameTime.ElapsedGameTime.Milliseconds;
 
+                // Set the start position for the breath emitter to the player's position
                 BreathEmitter.StartPosition.X = Position.X + (int)Width / 2;
                 BreathEmitter.StartPosition.Y = Position.Y + (int)Height / 2;
 
+                // Update the breath location depending on the direction of player
                 if (Flip == SpriteEffects.FlipHorizontally)
                     BreathEmitter.StartPosition.X += 24.0f;
                 else
                     BreathEmitter.StartPosition.X -= 24.0f;
 
+                // Start the effect if needed
                 if (!BreathEmitter.CreateEffect)
                     BreathEmitter.StartEffect();
+
+                // Kill gliding effect
+                CloudEmitter.EndEffect();
             }
             else
             {
-                MindPower += GameTime.ElapsedGameTime.Milliseconds;
+                // Update gliding
+                if (IsGliding)
+                {
+                    // Update the start position of the gliding effect
+                    CloudEmitter.StartPosition = Position;
+
+                    CloudEmitter.StartPosition.X += Width / 2;
+                    CloudEmitter.StartPosition.Y += Height;
+
+                    // Slowly drain mind power
+                    MindPower -= GameTime.ElapsedGameTime.Milliseconds;
+
+                    // Start gliding effect if not started
+                    if (!CloudEmitter.CreateEffect)
+                        CloudEmitter.StartEffect();
+                }
+                // Update normal
+                else
+                {
+                    // Kill gliding effect
+                    CloudEmitter.EndEffect();
+
+                    // Slowly restore mind power
+                    MindPower += GameTime.ElapsedGameTime.Milliseconds;
+                }
+
+                // Kill underwater breathing effect
                 BreathEmitter.EndEffect();
             }
 
+            // Take damage if out of mind power
             if (BlinkTimer <= 0.0f && MindPower < 0.0f)
                 TakeDamage(1);
+
+            // Enter fatigued state if out of mind power
+            if (MindPower <= 0.0f)
+            {
+                IsFatigued = true;
+            }
+
+            // Stop gliding if fatigued
+            if (IsFatigued)
+            {
+                IsGliding = false;
+            }
 
             MindPower = MathHelper.Clamp(MindPower, 0.0f, MindPowerMax);
 
@@ -158,7 +217,9 @@ namespace Story
                 }
             }
 
-            Bounce = (float)Math.Sin(GameTime.TotalGameTime.TotalSeconds * BounceRate) * BounceHeight * Height;
+            Bounce = (float)Math.Sin((GameTime.TotalGameTime.TotalSeconds - Game.PauseTime) * BounceRate) * BounceHeight * Height;
+
+            DisplayHealth = Health;
 
         } //End update
 
@@ -174,6 +235,16 @@ namespace Story
                     return;
                 }
             }
+        }
+
+        public bool TestCollisionVsCollectable(CollectableFruit Fruit)
+        {
+            return CollisionBox.CollisionRect.Intersects(Fruit.CollisionBox.CollisionRect);
+        }
+
+        public bool TestCollisionVsExit(LevelExit LevelExit)
+        {
+            return CollisionBox.CollisionRect.Intersects(LevelExit.CollisionBox.CollisionRect);
         }
 
         public void Respawn()
@@ -259,6 +330,7 @@ namespace Story
 
                 RegularCollision = true;
                 IsOnGround = true;
+                IsGliding = false;
 
                 // Collison Detected, float upwards
                 Velocity.Y = MathHelper.Clamp(Velocity.Y, -ActualGravityAcceleration, 0);
@@ -294,6 +366,7 @@ namespace Story
                 // Set velocity vector to ensure smooth ramp walking
                 Velocity.Y = WorldCollisionObjects[Index].CalculateSlopeAt(Position.X, (float)Width) * Velocity.X;
                 IsOnGround = true;
+                IsGliding = false;
             }
         }
 
@@ -309,10 +382,24 @@ namespace Story
                 Movement.X += ThumbStickMovement;
 
             if (InputManager.CheckJustPressed(InputManager.JumpKeys, InputManager.JumpButtons, InputManager.NoInputDelay))
-                JumpEngaged = true;
+            {
+                if (Velocity.Y > 16.0f && !IsOnGround && !IsFatigued)
+                {
+                    IsGliding = true;
+                    JumpEngaged = false;
+                }
+                else
+                    JumpEngaged = true;
+            }
 
             if (InputManager.CheckJustReleased(InputManager.JumpKeys, InputManager.JumpButtons, InputManager.NoInputDelay))
+            {
+                //Clear gliding
+                IsFatigued = false;
+                IsGliding = false;
+
                 JumpEngaged = false;
+            }
 
             if (InputManager.CheckRightTriggerDown())
             {
@@ -356,6 +443,8 @@ namespace Story
             HoverCollisionBox.Draw(SpriteBatch, Camera.CameraPosition, false);
             HoverBufferCollisionBox.Draw(SpriteBatch, Camera.CameraPosition, false);
             BreathEmitter.Draw(GameTime, SpriteBatch);
+            CloudEmitter.Draw(GameTime, SpriteBatch);
+
         }
 
     }

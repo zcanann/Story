@@ -15,11 +15,15 @@ namespace Story
     {
         //Both sides
         public static TitleScreen TitleScreenMenu;
-
+        public static LevelSelectMenu LevelSelectMenu;
+        public static IntroMenu IntroMenu;
+        public static CreditsMenu CreditsMenu;
+        
         //Right Side
+        public static OptionsMenu OptionsMenu;
 
         //Left Side
-
+        public static IngameMenu IngameMenu;
 
         private static MenuSideType CurrentFocus;
 
@@ -29,14 +33,31 @@ namespace Story
         private static Rectangle BlackBGRectangle;
         public static Texture2D BlackBG;
 
+        public static Texture2D HorizontalSelect;
+        public static Texture2D VerticalSelect;
+
         public static void Initialize()
         {
             TitleScreenMenu = new TitleScreen();
+            LevelSelectMenu = new LevelSelectMenu(MenuSideType.Both);
+
+            IngameMenu = new IngameMenu(MenuSideType.Left);
+            OptionsMenu = new OptionsMenu(MenuSideType.Right);
+            IntroMenu = new IntroMenu(MenuSideType.Both);
+            CreditsMenu = new CreditsMenu(MenuSideType.Both);
         }
 
         public static void LoadContent(ContentManager Content)
         {
+            HorizontalSelect = Content.Load<Texture2D>("Menus/TitleScreen/HorizontalSelect");
+            VerticalSelect = Content.Load<Texture2D>("Menus/TitleScreen/VerticalSelect");
+
             TitleScreenMenu.LoadContent(Content);
+            LevelSelectMenu.LoadContent(Content);
+            IngameMenu.LoadContent(Content);
+            OptionsMenu.LoadContent(Content);
+            IntroMenu.LoadContent(Content);
+            CreditsMenu.LoadContent(Content);
 
             BlackBG = Content.Load<Texture2D>(@"Menus\SolidBlackSquare");
             BlackBGRectangle = new Rectangle(0, 0, Game.BackBufferWidth, Game.BackBufferHeight);
@@ -57,7 +78,7 @@ namespace Story
             else if (CurrentFocus == MenuSideType.Right)
                 CurrentFocus = MenuSideType.Left;
             else
-                throw new Exception("Hey jackass, you screwed up and somehow the current menu selection was both. (class MenuManager)");
+                throw new Exception("Hey jackass, you screwed up (class MenuManager)");
         }
 
         public static bool HasFocus(Menu CallingMenu)
@@ -75,6 +96,9 @@ namespace Story
                 LeftMenu = null;
             if (RightMenu == CallingMenu)
                 RightMenu = null;
+
+            ChangeFocus();
+            InputManager.JamInput();
         }
 
         public static void CloseAll()
@@ -122,6 +146,31 @@ namespace Story
             OpenMenu(TitleScreenMenu, GiveFocus);
         }
 
+        public static void OpenLevelSelectMenu(bool GiveFocus)
+        {
+            OpenMenu(LevelSelectMenu, true);
+        }
+
+        public static void OpenIngameMenu(bool GiveFocus)
+        {
+            OpenMenu(IngameMenu, GiveFocus);
+        }
+
+        public static void OpenOptionsMenu(bool GiveFocus)
+        {
+            OpenMenu(OptionsMenu, GiveFocus);
+        }
+
+        public static void OpenCreditsMenu(bool GiveFocus)
+        {
+            OpenMenu(CreditsMenu, GiveFocus);
+        }
+
+        public static void OpenIntroMenu(bool GiveFocus)
+        {
+            OpenMenu(IntroMenu, GiveFocus);
+        }
+
         public static void Update(GameTime GameTime)
         {
             switch (CurrentFocus)
@@ -139,6 +188,7 @@ namespace Story
                     break;
 
                 default:
+                case MenuSideType.Both:
                 case MenuSideType.Left:
                     if (LeftMenu != null)
                     {

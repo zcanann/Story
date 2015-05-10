@@ -1016,7 +1016,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Font\GameFont.xnb</Output>
-      <Time>2015-03-23T18:06:50-07:00</Time>
+      <Time>2015-05-10T12:22:54.4697255-07:00</Time>
     </Item>
     <Item>
       <Source>Objects\Collectables\Egg.png</Source>
@@ -1170,6 +1170,267 @@
       <Options>None</Options>
       <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Sprites\EggProjectile.xnb</Output>
       <Time>2015-03-26T20:49:06-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\WorldMap.png</Source>
+      <Name>Menus\WorldMap\WorldMap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\WorldMap.xnb</Output>
+      <Time>2015-04-22T20:58:44.8325631-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\MindPowerBack.png</Source>
+      <Name>GUI\MindPowerBack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\MindPowerBack.xnb</Output>
+      <Time>2015-05-09T14:08:01.1877609-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\MindPowerCover.png</Source>
+      <Name>GUI\MindPowerCover</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\MindPowerCover.xnb</Output>
+      <Time>2015-05-09T14:08:01.1977609-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\Heart0.png</Source>
+      <Name>GUI\Heart0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\Heart0.xnb</Output>
+      <Time>2015-05-09T14:34:12.040134-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\Heart1.png</Source>
+      <Name>GUI\Heart1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\Heart1.xnb</Output>
+      <Time>2015-05-09T14:34:12.040134-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\Heart10.png</Source>
+      <Name>GUI\Heart10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\Heart10.xnb</Output>
+      <Time>2015-05-09T14:34:12.2897345-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\Heart2.png</Source>
+      <Name>GUI\Heart2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\Heart2.xnb</Output>
+      <Time>2015-05-09T14:34:12.0713341-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\Heart3.png</Source>
+      <Name>GUI\Heart3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\Heart3.xnb</Output>
+      <Time>2015-05-09T14:34:12.1025341-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\Heart4.png</Source>
+      <Name>GUI\Heart4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\Heart4.xnb</Output>
+      <Time>2015-05-09T14:34:12.1337342-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\Heart5.png</Source>
+      <Name>GUI\Heart5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\Heart5.xnb</Output>
+      <Time>2015-05-09T14:34:12.1961343-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\Heart6.png</Source>
+      <Name>GUI\Heart6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\Heart6.xnb</Output>
+      <Time>2015-05-09T14:34:12.2117343-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\Heart7.png</Source>
+      <Name>GUI\Heart7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\Heart7.xnb</Output>
+      <Time>2015-05-09T14:34:12.2117343-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\Heart8.png</Source>
+      <Name>GUI\Heart8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\Heart8.xnb</Output>
+      <Time>2015-05-09T14:34:12.2273344-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\Heart9.png</Source>
+      <Name>GUI\Heart9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\Heart9.xnb</Output>
+      <Time>2015-05-09T14:34:12.2741344-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\Egg.png</Source>
+      <Name>GUI\Egg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\GUI\Egg.xnb</Output>
+      <Time>2015-05-09T15:09:37.0190143-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\IngameMenu\IngameMenu.png</Source>
+      <Name>Menus\IngameMenu\IngameMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\IngameMenu\IngameMenu.xnb</Output>
+      <Time>2015-05-09T18:00:07.3789847-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\LevelNodeLocked.png</Source>
+      <Name>Menus\WorldMap\LevelNodeLocked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\LevelNodeLocked.xnb</Output>
+      <Time>2015-05-09T18:28:29.0443642-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\LevelNodeUnlocked.png</Source>
+      <Name>Menus\WorldMap\LevelNodeUnlocked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\LevelNodeUnlocked.xnb</Output>
+      <Time>2015-05-09T18:28:29.5673941-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\DashedLineLocked.png</Source>
+      <Name>Menus\WorldMap\DashedLineLocked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\DashedLineLocked.xnb</Output>
+      <Time>2015-05-09T19:26:23.6000974-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\DashedLineUnlocked.png</Source>
+      <Name>Menus\WorldMap\DashedLineUnlocked</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\DashedLineUnlocked.xnb</Output>
+      <Time>2015-05-09T19:26:23.6040976-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\WorldMapSelector.png</Source>
+      <Name>Menus\WorldMap\WorldMapSelector</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\WorldMapSelector.xnb</Output>
+      <Time>2015-05-09T19:38:10.6705395-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\Apple.png</Source>
+      <Name>Menus\WorldMap\Apple</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\Apple.xnb</Output>
+      <Time>2015-05-09T21:45:02.6319159-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\AppleGrayed.png</Source>
+      <Name>Menus\WorldMap\AppleGrayed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\AppleGrayed.xnb</Output>
+      <Time>2015-05-09T21:45:02.6369162-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\Banana.png</Source>
+      <Name>Menus\WorldMap\Banana</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\Banana.xnb</Output>
+      <Time>2015-05-09T21:45:02.6409164-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\BananaGrayed.png</Source>
+      <Name>Menus\WorldMap\BananaGrayed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\BananaGrayed.xnb</Output>
+      <Time>2015-05-09T21:45:02.6449167-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\Orange.png</Source>
+      <Name>Menus\WorldMap\Orange</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\Orange.xnb</Output>
+      <Time>2015-05-09T21:45:02.6669179-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\OrangeGrayed.png</Source>
+      <Name>Menus\WorldMap\OrangeGrayed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\OrangeGrayed.xnb</Output>
+      <Time>2015-05-09T21:45:02.6709181-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\WorldMap\ProgressPanel.png</Source>
+      <Name>Menus\WorldMap\ProgressPanel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\WorldMap\ProgressPanel.xnb</Output>
+      <Time>2015-05-09T21:51:11.851034-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Menus\OptionsMenu\OptionsMenu.png</Source>
+      <Name>Menus\OptionsMenu\OptionsMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Zachary\Documents\Visual Studio 2013\Projects\Story\Story\Story\bin\x86\Debug\Content\Menus\OptionsMenu\OptionsMenu.xnb</Output>
+      <Time>2015-05-10T11:38:13.0699113-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

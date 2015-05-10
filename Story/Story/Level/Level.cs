@@ -51,6 +51,7 @@ namespace Story
 
             bool FoundLevelData = false;
             int LevelDataIndex = -1;
+
             for (int Index = 0; Index < SaveGame.LevelSaveData.Count; Index++)
             {
                 if (SaveGame.LevelSaveData[Index].LevelID != LevelID)
@@ -58,14 +59,13 @@ namespace Story
 
                 LevelDataIndex = Index;
                 FoundLevelData = true;
-                break;
             }
 
             if (!FoundLevelData)
             {
                 return;
-                //throw new Exception("Unable to load level");
             }
+
             LevelData LevelData = SaveGame.LevelSaveData[LevelDataIndex];
 
             // Reconstruct level from the save data
@@ -236,6 +236,9 @@ namespace Story
 
         public virtual void Update(GameTime GameTime)
         {
+            if (InputManager.CheckJustPressed(InputManager.MenuKeys, InputManager.MenuButtons))
+                MenuManager.OpenIngameMenu(true);
+
             Player.Update(GameTime, CollisionObjects);
 
             // Update enemies
@@ -258,14 +261,47 @@ namespace Story
                 CollectableFruits[Index].Update(GameTime);
             }
 
-            Player.TestCollisionsVsEnemies(Enemies);
-            Player.TestCollisionVsEggs(CollectableEggs);
-            Player.TestCollisionVsCheckPoints(CheckPoints);
-
             EnvironmentEmitterBG.StartPosition = Camera.CameraPosition;
             EnvironmentEmitterFG.StartPosition = Camera.CameraPosition;
             EnvironmentEmitterBG.Update(GameTime);
             EnvironmentEmitterFG.Update(GameTime);
+
+            Player.TestCollisionsVsEnemies(Enemies);
+            Player.TestCollisionVsEggs(CollectableEggs);
+            Player.TestCollisionVsCheckPoints(CheckPoints);
+
+            for (int Index = 0; Index < CollectableFruits.Length; Index++)
+            {
+                if (Player.TestCollisionVsCollectable(CollectableFruits[Index]))
+                {
+                    CollectableFruits[Index].Collected = true;
+                    switch (Index)
+                    {
+                        case 0:
+                            AppleCollected = true;
+                            break;
+                        case 1:
+                            BananaCollected = true;
+                            break;
+                        case 2:
+                            OrangeCollected = true;
+                            break;
+                        default:
+                            throw new Exception("This shouldn't be possible. Class Level.");
+                    }
+                }
+            }
+
+            if (Player.TestCollisionVsExit(LevelExit))
+            {
+                SaveGame.SaveLevelCompletion(LevelID, AppleCollected, BananaCollected, OrangeCollected);
+
+                if (LevelID == 19)
+                    MenuManager.OpenCreditsMenu(true);
+                else
+                    MenuManager.OpenLevelSelectMenu(true);
+
+            }
         }
 
         // Note that due to the features of the level editor, this is fully overriden by the class

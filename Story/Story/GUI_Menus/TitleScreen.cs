@@ -30,8 +30,6 @@ namespace Story
         private TitleSelectionType TitleSelection;
 
         private Texture2D Background;
-        private Texture2D HorizontalSelect;
-        private Texture2D VerticalSelect;
 
         private Menu.MenuDelegate NewGameCallBack;      // Call back function when new game is selected
         private Menu.MenuDelegate LoadGameCallBack;     // Call back function when load game is selected
@@ -146,8 +144,6 @@ namespace Story
         public override void LoadContent(ContentManager Content)
         {
             Background = Content.Load<Texture2D>("Menus/TitleScreen/TitleScreen");
-            HorizontalSelect = Content.Load<Texture2D>("Menus/TitleScreen/HorizontalSelect");
-            VerticalSelect = Content.Load<Texture2D>("Menus/TitleScreen/VerticalSelect");
         }
 
         public override void Draw(SpriteBatch SpriteBatch)
@@ -173,7 +169,7 @@ namespace Story
                             TitleCursorPosition = new Vector2(Game.BackBufferWidth / 2 - 180, 500);
                             break;
                     }
-                    SpriteBatch.Draw(VerticalSelect, TitleCursorPosition, Color.White);
+                    SpriteBatch.Draw(MenuManager.VerticalSelect, TitleCursorPosition, Color.White);
                     break;
 
             }

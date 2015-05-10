@@ -36,8 +36,10 @@ namespace Story
 
         public void Update(GameTime GameTime)
         {
+            if (Collected)
+                return;
             // Bounce offset for drawing    
-            Bounce = (float)Math.Sin(GameTime.TotalGameTime.TotalSeconds * BounceRate + Position.X * BounceSync) * BounceHeight * Texture.Height;
+            Bounce = (float)Math.Sin((GameTime.TotalGameTime.TotalSeconds - Game.PauseTime) * BounceRate + Position.X * BounceSync) * BounceHeight * Texture.Height;
         }
 
         public bool IsOnScreen()
@@ -48,6 +50,9 @@ namespace Story
         public void Draw(SpriteBatch SpriteBatch)
         {
             if (!IsOnScreen())
+                return;
+
+            if (Collected)
                 return;
 
             // Draw collision box

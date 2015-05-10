@@ -14,7 +14,7 @@ namespace Story
     public class Game : Microsoft.Xna.Framework.Game
     {
         // Debug constants
-        public const bool DebugMode = true;
+        public static bool DebugMode = true;
         public const bool GodMode = false;
         public const bool Muted = true;
         public const bool VisualizeFrustumCulling = false;
@@ -29,6 +29,10 @@ namespace Story
         public static Vector2 ScreenSize = new Vector2(BackBufferWidth, BackBufferHeight);
         public static Vector2 HalfScreenSize = new Vector2(BackBufferWidth / 2, BackBufferHeight / 2);
 
+        public static SpriteFont GameFont;
+
+        public static float PauseTime;
+
         // Game related
         private Level Level;
 
@@ -41,22 +45,45 @@ namespace Story
             IsMouseVisible = true;
         }
 
-        public void LoadGame()
+        
+
+        public void NewGame()
         {
+            // TODO PLAY OPENING SEQUENCE (AS MENU). KILL SAVE FILE.
             Level = new Level();
             Level.LoadLevel(1);
         }
 
-        public void NewGame()
+        public void LoadGame()
         {
+            // ENSURE SAVE DATA IS LOADED
             Level = new Level();
-            Level.LoadLevel(1);
+            Level.LoadLevel(MenuManager.LevelSelectMenu.LevelSelectionID + 1);
         }
 
         public void OpenLevelEditor()
         {
             // Create level as a level editor
-            Level = new LevelEditor();
+            Level = new LevelEditor(MenuManager.LevelSelectMenu.LevelSelectionID + 1);
+        }
+
+        public void OpenTitleScreen()
+        {
+            MenuManager.OpenTitleScreenMenu(true);
+        }
+
+        public void OpenWorldMap()
+        {
+            // Set callback to load the game normally
+            MenuManager.LevelSelectMenu.InitializeCallBacks(LoadGame, OpenTitleScreen);
+            MenuManager.OpenLevelSelectMenu(true);
+        }
+
+        public void OpenWorldMapEditor()
+        {
+            // Set callback to load the game in editor mode
+            MenuManager.LevelSelectMenu.InitializeCallBacks(OpenLevelEditor, OpenTitleScreen);
+            MenuManager.OpenLevelSelectMenu(true);
         }
 
         private void QuitGame()
@@ -74,7 +101,11 @@ namespace Story
         private void InitializeMenus()
         {
             MenuManager.Initialize();
-            MenuManager.TitleScreenMenu.InitializeCallBacks(NewGame, LoadGame, OpenLevelEditor, QuitGame);
+
+            // Initialize menu callback functions
+            MenuManager.TitleScreenMenu.InitializeCallBacks(NewGame, OpenWorldMap, OpenWorldMapEditor, QuitGame);
+            MenuManager.IngameMenu.InitializeCallBacks(OpenWorldMap, OpenTitleScreen, QuitGame);
+            MenuManager.LevelSelectMenu.InitializeCallBacks(LoadGame, OpenTitleScreen);
 
             MenuManager.OpenTitleScreenMenu(true);
         }
@@ -82,11 +113,16 @@ namespace Story
         protected override void LoadContent()
         {
             SpriteBatch = new SpriteBatch(GraphicsDevice);  // Create a new SpriteBatch to draw textures
-            MenuManager.LoadContent(Content);
+
+            // Load font
+            GameFont = Content.Load<SpriteFont>("Font/GameFont");
 
             Level.LoadContent(Content);
             LevelEditor.LoadContent(Content);
             Player.LoadContent(Content);
+
+            GUI.LoadContent(Content);
+            MenuManager.LoadContent(Content);
         }
 
         protected override void UnloadContent()
@@ -98,9 +134,15 @@ namespace Story
         {
             InputManager.BeginUpdate(GameTime);
 
-            if (Level != null)
-                Level.Update(GameTime);
+            if (InputManager.CheckJustPressed(InputManager.DebugKeys, InputManager.DebugButtons))
+                DebugMode = !DebugMode;
 
+            if (!MenuManager.HasOpenMenu() && Level != null)
+                Level.Update(GameTime);
+            else
+                PauseTime += GameTime.ElapsedGameTime.Milliseconds / 1000.0f;
+
+            GUI.Update(GameTime);
             MenuManager.Update(GameTime);
 
             InputManager.EndUpdate();
@@ -117,11 +159,23 @@ namespace Story
                 Level.Draw(GameTime, SpriteBatch);
 
             //Camera.Draw(SpriteBatch);
+            GUI.Draw(GameTime, SpriteBatch);
             MenuManager.Draw(SpriteBatch);
 
             SpriteBatch.End();
 
             base.Draw(GameTime);
+        }
+
+        public static void DrawShadowedString(SpriteBatch SpriteBatch, SpriteFont Font, string Value, Vector2 Position, Color Color)
+        {
+            SpriteBatch.DrawString(Font, Value, Position + Vector2.One, Color.Black);
+            SpriteBatch.DrawString(Font, Value, Position, Color);
+        }
+
+        public static void DrawString(SpriteBatch SpriteBatch, SpriteFont Font, string Value, Vector2 Position, Color Color)
+        {
+            SpriteBatch.DrawString(Font, Value, Position, Color);
         }
     }
 }
